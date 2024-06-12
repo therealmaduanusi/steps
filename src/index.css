@@ -1,13 +1,70 @@
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
+
 }
 
-code {
+.steps {
+  background-color: rgba(128, 128, 128, 0.075);
+  width: 20rem;
+  padding: 2rem;
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+
+@media (max-width: 400px ) {
+  .steps {
+    width: 15rem;
+  }
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+}
+.numbers div {
+  background-color: rgba(128, 128, 128, 0.291);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.message {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button {
+  border: none;
+  background-color: rgba(128, 128, 128, 0.291);
+  border-radius: 10px;
+  padding: 5px 6px;
+  font-weight: bolder;
+}
+button {
+  cursor: pointer;
+}
+.numbers .active {
+  background-color: #7950f2;
+  color: #fff;
 }
