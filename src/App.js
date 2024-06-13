@@ -1,4 +1,5 @@
 import { useState } from "react";
+import AccordionComponent from "./components/AccordionComponent";
 
 const message = [
   "learn React ⚛️",
@@ -20,8 +21,12 @@ export default function App() {
   }
   return (
     <>
-      <button style={{ backgroundColor: "#7950f2", color: "#fff", border: 'none' }} onClick={handleToggle}>
-        {isOpen ? 'x' : '+'}
+      <AccordionComponent />
+      <button
+        style={{ backgroundColor: "#7950f2", color: "#fff", border: "none" }}
+        onClick={handleToggle}
+      >
+        {isOpen ? "x" : "+"}
       </button>
       {isOpen && (
         <div className="steps">
